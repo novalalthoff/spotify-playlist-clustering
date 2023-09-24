@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
 from sklearn.cluster import KMeans
 from sklearn.decomposition import PCA
 import plotly.express as px
@@ -9,17 +8,6 @@ from requests import post, get
 import json
 import csv
 from sklearn import preprocessing
-
-# ganti variabel dengan client_id milik anda, ex "97aeaf1e98f943edb1344ab86f71692a"
-client_id = "22504b364e024b9d8d3cfdc9c50fbbbd"
-
-# ganti variabel dengan client_secret milik anda, ex "9f35e123caa7490b904ad6bcb98f4ba9"
-client_secret = "d97dbb924a8e4d8b88f1f9fe1071af4d"
-
-# 37i9dQZF1DXbrUpGvoi3TS - 1(similar sad songs)
-# 1dtCMTYzAOzwKXqklxPJNS - 2(old songs, rock, rap)
-# 0IN7IWKmIfwlEysGyWUuRg - 3(mix of modern electronic, pop, and rock)
-playlistId = "1dtCMTYzAOzwKXqklxPJNS"
 
 dataset = []
 dataset2 = []
